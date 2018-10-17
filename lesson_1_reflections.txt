@@ -1,0 +1,81 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+
+    Fill in your answer here:
+
+    it helps by showing the right place of the differences, it could be for instance just a typo
+
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Fill in your answer here:
+
+    when you have the entire history of a file, you could easily see your mistakes and avoid them in the future; 
+
+
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Fill in your answer here:
+having versions automatically saved couldn't describe the project in a good way, because it saves too much versions that are not necessary, or doesn't save at all,
+Git commit will describe the project well, because it save manually each logical change and you can add your personnal message describing the changes.
+    
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Fill in your answer here:
+ Git is an oriented code version control system. when writing codes, we work many times with files that are connected, so it is better to commit changes in one time 
+
+
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Fill in your answer here:
+
+"git log" show you the history of changes with all commits(id, date,) ;
+"git diff" show you the differences between two files: git diff id_new_file id_old_file.
+
+
+
+
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Fill in your answer here:
+
+when using a version control you can easily revert changes to an earlier version that hasn't the bugs, and that will make you confident about changing your code although you know that it could brak something (git checkout is the command)
+
+
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here:
+
+i want to develop an application and want to use a version control system    
+
+
+
+
+
+
+
+* to find differences between two files we use prompt command with "fc" command wich stand for "file compare" 
+-> fc new_file.txt old_file.txt
+
+* A good rule of thumb is to make one commit per logical change. For example, if you fixed a typo, then fixed a bug in a separate part of the file, you should use one commit for each change since they are logically separate. If you do this, each commit will have one purpose that can be easily understood.
+
+* To get colored diff output, run git config --global color.ui auto
+
+* The command Caroline types to checkout the "Revert controls" commit is git checkout b0678b161fcf74467ed3a63110557e3d6229cfa6. 
